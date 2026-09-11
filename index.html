@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <script
+      src="https://kit.fontawesome.com/60e1b7dfff.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <i class="fa-solid fa-wallet"></i>
+          <span class="logo-name">Expense Tracker</span>
+        </div>
+        <div class="links">
+          <a href="index.html" class="active">Dashboard</a>
+          <a href="add.html">Add Expense</a>
+          <a href="Stat.html">Statistics View</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="dashboard">
+        <i class="fa-solid fa-chart-line"></i>
+        <h1>Dashboard</h1>
+      </div>
+      <section class="Expense-container">
+        <div class="boxes">
+          <h2>Total Expense</h2>
+          <span id="number-1">number</span>
+        </div>
+        <div class="boxes">
+          <h2>This Month</h2>
+          <span id="number-2">number</span>
+        </div>
+        <div class="boxes">
+          <h2>Total Transaction</h2>
+          <span id="number-3">number</span>
+        </div>
+      </section>
+
+      <section class="table">
+        <h3>Recent Expenses</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Title</th>
+              <th>Category</th>
+              <th>Amount</th>
+              <th>Date</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <tr>
+              <td>1</td>
+              <td>Grocery</td>
+              <td>Food</td>
+              <td>$120.5</td>
+              <td>2026-05-23</td>
+              <td>
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Rent</td>
+              <td>Housing</td>
+              <td>$620.5</td>
+              <td>2026-05-13</td>
+              <td>
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Electricity Bill</td>
+              <td>Utilities</td>
+              <td>$180.5</td>
+              <td>2026-05-10</td>
+              <td>
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Internet Bill</td>
+              <td>Utilities</td>
+              <td>$60.5</td>
+              <td>2026-05-08</td>
+              <td>
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Restaurant</td>
+              <td>Food</td>
+              <td>$50</td>
+              <td>2026-05-05</td>
+              <td>
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/60e1b7dfff.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+    <title>Expense Tracker</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <i class="fa-solid fa-wallet"></i>
+          <span class="logo-name">Expense Tracker</span>
+        </div>
+        <div class="links">
+          <a href="index.html">Dashboard</a>
+          <a href="add.html" class="active">Add Expense</a>
+          <a href="Stat.html">Statistics View</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="heading-class">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h1>Add New Expense</h1>
+      </div>
+      <form>
+        <label for="title"><b>Title</b></label
+        ><br />
+        <input
+          type="text"
+          name="title"
+          id="title"
+          placeholder="Enter New Expense"
+          required
+        />
+        <br />
+        <label for="amount"><b>Amount ($)</b></label
+        ><br />
+        <input
+          type="number"
+          name="amount"
+          id="amount"
+          placeholder="Enter Amount"
+          required
+        />
+        <br />
+        <label for="Category"><b>Category</b></label
+        ><br />
+        <select name="Category" id="Category">
+          <option value="">Select</option>
+          <option value="food">Food</option>
+          <option value="Utilities">Utilities</option>
+          <option value="Housing">Housing</option>
+          <option value="Medical">Medical</option>
+          <option value="transport">transport</option>
+          <option value="other">other</option>
+        </select>
+        <br />
+        <label for="date"><b>Date</b></label
+        ><br />
+        <input type="date" name="date" id="date" required />
+        <button id="add-expense-btn" type="button">Add Expense</button>
+      </form>
+    </main>
+  </body>
+</html>
