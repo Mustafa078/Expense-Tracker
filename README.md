@@ -1,6 +1,10 @@
 # Expense Tracker
 
-A lightweight personal expense management web app built with plain HTML, CSS, and JavaScript. It helps users record, update, and remove daily expenses while viewing totals, monthly spending, and visual summaries.
+A simple and responsive personal finance app for tracking daily spending, monitoring monthly totals, and visualizing expense trends with charts.
+
+## About the Repository
+
+This repository contains a front-end expense tracker built with HTML, CSS, and JavaScript. It allows users to add, edit, and delete expenses, keep everything saved in the browser using `localStorage`, and review summaries through dashboard cards and chart-based analytics.
 
 ## Features
 
